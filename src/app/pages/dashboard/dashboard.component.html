@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row" >
   <div class="col-lg-3 col-md-6 col-sm-6">
     <div class="card card-stats">
       <div class="card-body ">
@@ -10,9 +10,8 @@
           </div>
           <div class="col-7 col-md-8">
             <div class="numbers">
-              <p class="card-category">Most Active</p>
-              <p class="card-title">status
-                <p>
+              <p class="card-category">{{tilesData.mostActive.name}}</p>
+              <p class="card-title">{{tilesData.mostActive.description}}</p>
             </div>
           </div>
         </div>
@@ -30,9 +29,8 @@
           </div>
           <div class="col-7 col-md-8">
             <div class="numbers">
-              <p class="card-category">42.5k</p>
-              <p class="card-title">Visitor
-                <p>
+              <p class="card-category">{{tilesData.visitors.name}}</p>
+              <p class="card-title">{{tilesData.visitors.description}}</p>
             </div>
           </div>
         </div>
@@ -50,9 +48,8 @@
           </div>
           <div class="col-7 col-md-8">
             <div class="numbers">
-              <p class="card-category">5.2K</p>
-              <p class="card-title">anonymous
-                <p>
+              <p class="card-category">{{tilesData.anonymous.name}}</p>
+              <p class="card-title">{{tilesData.anonymous.description}}</p>
             </div>
           </div>
         </div>
@@ -67,8 +64,16 @@
         <h5 class="card-title">Users Behavior</h5>
         <p class="card-category">24 Hours performance</p>
       </div>
-      <div class="card-body ">
-        <canvas id=chartHours width="400" height="100"></canvas>
+      <div class="card-body " style="display: block">
+        <canvas baseChart width="400" height="400"
+        [datasets]="lineChartData"
+        [labels]="lineChartLabels"
+        [options]="lineChartOptions"
+        [colors]="lineChartColors"
+        [legend]="lineChartLegend"
+        [chartType]="lineChartType"
+        [plugins]="lineChartPlugins">
+      </canvas>
       </div>
       <div class="card-footer ">
         <hr>

@@ -3,17 +3,15 @@ import { ChartOptions, ChartType, ChartDataSets } from 'chart.js';
 import { Label, Color } from 'ng2-charts';
 import * as mockData from "../../mockData/data.json";
 
-
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.scss']
+  selector: 'app-chart',
+  templateUrl: './chart.component.html',
+  styleUrls: ['./chart.component.scss']
 })
-export class DashboardComponent implements OnInit {
+export class ChartComponent implements OnInit {
   public lineChartData: ChartDataSets[] = [
     { data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A' },
   ];
-  public tilesData: any;
   public lineChartLabels: Label[] = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
   public lineChartOptions: ChartOptions = {
     responsive: true,
@@ -42,8 +40,6 @@ export class DashboardComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.tilesData = mockData.tiles;
-    console.log('@@@MockData', mockData);
     const label: string[] = [];
     const value: number[] = [];
     mockData.chart.forEach((data: any) => {
