@@ -42,5 +42,19 @@
             "value": 56000,
             "label": "26-July"
         }
+    ],
+    "genderData":[
+        {
+            "label": "male",
+            "value": 90
+        },
+        {
+            "label": "female",
+            "value": 90
+        },
+        {
+            "label": "others",
+            "value": 90
+        }
     ]
 }

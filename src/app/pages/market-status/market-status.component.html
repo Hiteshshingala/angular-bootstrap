@@ -143,9 +143,14 @@
             <div class="card devided-card-up card-stats">
                 <div class="card-body">
                     <div class="row p-20">
-                        <app-doughnut-chart [fillPercentage]="90">male</app-doughnut-chart>
-                        <app-doughnut-chart [fillPercentage]="90">Female</app-doughnut-chart>
-                        <app-doughnut-chart [fillPercentage]="90">Others</app-doughnut-chart>
+                        <div class="row"  *ngFor="let gen of genderData">
+                            <div class="col  d-flex justify-content-center text-center">
+                                <app-doughnut-chart [fillPercentage]="gen.value"></app-doughnut-chart>
+                            </div>
+                            <div class="col  d-flex justify-content-center text-center font-bold">
+                                {{gen.label}}
+                            </div>
+                        </div>
                     </div>
                     <div></div>
                 </div>
