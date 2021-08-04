@@ -1,16 +1,22 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { AdsAnalyticsComponent } from './pages/ads-analytics/ads-analytics.component';
+import { MarketStatusComponent } from './pages/market-status/market-status.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'dashboard',
+    redirectTo: 'ads_analytics',
     pathMatch: 'full',
   },
   {
-    path: 'dashboard',
-    component: DashboardComponent,
+    path: 'ads_analytics',
+    component: AdsAnalyticsComponent,
+    pathMatch: 'full',
+  },
+  {
+    path: 'market_status',
+    component: MarketStatusComponent,
     pathMatch: 'full',
   }
 ];
