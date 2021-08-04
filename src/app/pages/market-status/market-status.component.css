@@ -4,6 +4,15 @@
     border: 1px solid #e9ecef;
 }
 
+.devided-card-down {
+    border-radius: 8px 8px 0px 0px;;
+    border: 1px solid #e9ecef;
+}
+.devided-card-up {
+    border-radius: 0px 0px 8px 8px;;
+    border: 1px solid #e9ecef;
+}
+    
 .active {
     background: #445a64;
     color     : white;
@@ -11,6 +20,17 @@
 
 .card-body {
     padding: 5px !important;
+}
+.p-20 {
+    padding: 20px !important;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.ml-15 {
+    margin-left: 15px;
 }
 
 .ml-5 {
@@ -47,7 +67,40 @@ p {
     font-size  : 20px;
     font-weight: bold;
 }
+.promote-note-text {
+    font-size  : 15px;
+    font-weight: bold;
+    font-family: system-ui;
+}
 
 .font-size-20 {
     font-size: 20px;
+}
+.align-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.align-start{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.post-add-btn {
+    background: #e7571c;
+    padding: 10px 45px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 12px;
+    font-family: cursive;
+}
+.suggestion-text{
+    color: #9e7a6d;
+}
+
+.class-header{
+    padding: 1rem 0rem 2rem 1rem;
 }

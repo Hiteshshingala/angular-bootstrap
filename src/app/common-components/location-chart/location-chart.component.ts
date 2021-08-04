@@ -4,14 +4,13 @@ import { Color, Label } from 'ng2-charts';
 import * as mockData from '../../mockData/data.json';
 
 @Component({
-  selector: 'app-market-status',
-  templateUrl: './market-status.component.html',
-  styleUrls: ['./market-status.component.css']
+  selector: 'app-location-chart',
+  templateUrl: './location-chart.component.html',
+  styleUrls: ['./location-chart.component.scss']
 })
-
-export class MarketStatusComponent implements OnInit {
+export class LocationChartComponent implements OnInit {
   public lineChartData: ChartDataSets[] = [
-    { data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A' },
+    { data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A', fill: false },
   ];
   public tilesData: any;
   public lineChartLabels: Label[] = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
@@ -63,5 +62,4 @@ export class MarketStatusComponent implements OnInit {
       { data: value, label: 'location' }
     ];
   }
-
 }

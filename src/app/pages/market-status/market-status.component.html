@@ -4,7 +4,7 @@
             <div class="col-lg-4 col-md-4 col-sm-4">
                 <div class="card card-stats active">
                     <div class="card-body">
-                        <div class="row ml-5 mr-5">
+                        <div class="row ml-5">
                             <div>
                                 <div class="numbers">
                                     <p class="card-category">{{tilesData.mostActive.name}}</p>
@@ -18,7 +18,7 @@
             <div class="col-lg-4 col-md-4 col-sm-4">
                 <div class="card card-stats">
                     <div class="card-body ">
-                        <div class="row ml-5 mr-5">
+                        <div class="row ml-5">
                             <div class="col-md-8">
                                 <div class="numbers">
                                     <p class="card-category font-size-20">{{tilesData.visitors.name}}</p>
@@ -37,7 +37,7 @@
             <div class="col-lg-4 col-md-4 col-sm-4">
                 <div class="card card-stats">
                     <div class="card-body">
-                        <div class="row ml-5 mr-5">
+                        <div class="row ml-5">
                             <div class="col-7 col-md-8">
                                 <div class="numbers">
                                     <p class="card-category font-size-20">{{tilesData.anonymous.name}}</p>
@@ -56,62 +56,100 @@
         </div>
         <div class="col md-12">
             <div class="card mt-20">
+                <div class="class-header">
+                    <div class="row">
+                        <div class="col col-md-3">
+                            Location Section
+                        </div>
+                        <div class="col col-md-2">
+                            New Zealand
+                        </div>
+                        <div class="col col-md-2">
+                            California
+                        </div>
+                        <div class="col col-md-2">
+                            Maryland
+                        </div>
+                        <div class="col col-md-3">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Dropdown button
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="card-body" style="display: block">
-                    <canvas baseChart width="600" height="400" [datasets]="lineChartData" [labels]="lineChartLabels"
-                        [options]="lineChartOptions" [colors]="lineChartColors" [legend]="lineChartLegend"
-                        [chartType]="lineChartType" [plugins]="lineChartPlugins">
-                    </canvas>
-                </div>
+                    <app-location-chart></app-location-chart>
+                  </div>
             </div>
-            <!-- <div class="row">
-                <div class="col-md-4">
-                    <div class="card ">
-                        <div class="card-header ">
-                            <h5 class="card-title">Email Statistics</h5>
-                            <p class="card-category">Last Campaign Performance</p>
-                        </div>
-                        <div class="card-body ">
-                            <canvas id="chartEmail"></canvas>
-                        </div>
-                        <div class="card-footer ">
-                            <div class="legend">
-                                <i class="fa fa-circle text-primary"></i> Opened
-                                <i class="fa fa-circle text-warning"></i> Read
-                                <i class="fa fa-circle text-danger"></i> Deleted
-                                <i class="fa fa-circle text-gray"></i> Unopened
-                            </div>
-                            <hr>
-                            <div class="stats">
-                                <i class="fa fa-calendar"></i> Number of emails sent
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-8">
-                    <div class="card card-chart">
-                        <div class="card-header">
-                            <h5 class="card-title">NASDAQ: AAPL</h5>
-                            <p class="card-category">Line Chart with Points</p>
-                        </div>
-                        <div class="card-body">
-                            <canvas id="speedChart" width="400" height="100"></canvas>
-                        </div>
-                        <div class="card-footer">
-                            <div class="chart-legend">
-                                <i class="fa fa-circle text-info"></i> Tesla Model S
-                                <i class="fa fa-circle text-warning"></i> BMW 5 Series
-                            </div>
-                            <hr />
-                            <div class="card-stats">
-                                <i class="fa fa-check"></i> Data information certified
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </div>
     <div class="col-md-4">
-        ddas
+        <div class="col-12 mb-15">
+            <div class="card card-stats">
+                <div class="card-body">
+                    <div class="row p-20">
+                        <div class="align-center">
+                            <p class="promote-note-text">By promoting your add, it will be seen by 26% and it may raise
+                                the chance of 37% of selling.</p>
+                            <div class="align-center mt-20">
+                                <button class="post-add-btn">Promote</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 mb-15">
+            <div class="card devided-card-down card-stats">
+                <div class="card-body">
+                    <div class="row p-20">
+                        <div class="align-start">
+                            <p class="promote-note-text font-size-20">Suggestion Section</p>
+                        </div>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="card devided-card-up card-stats">
+                <div class="card-body">
+                    <div class="row p-20">
+                        <ul class="ml-15 suggestion-text">
+                            <li class="li-points">Makes sure you have more description</li>
+                            <li class="li-points">Makes sure you have more description</li>
+                        </ul>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 mb-15">
+            <div class="card devided-card-down card-stats">
+                <div class="card-body">
+                    <div class="row p-20">
+                        <div class="align-start">
+                            <p class="promote-note-text font-size-20">Gender Section</p>
+                        </div>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="card devided-card-up card-stats">
+                <div class="card-body">
+                    <div class="row p-20">
+                        <app-doughnut-chart [fillPercentage]="90">male</app-doughnut-chart>
+                        <app-doughnut-chart [fillPercentage]="90">Female</app-doughnut-chart>
+                        <app-doughnut-chart [fillPercentage]="90">Others</app-doughnut-chart>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

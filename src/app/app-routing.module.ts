@@ -6,7 +6,7 @@ import { MarketStatusComponent } from './pages/market-status/market-status.compo
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'ads_analytics',
+    redirectTo: 'market_status',
     pathMatch: 'full',
   },
   {
