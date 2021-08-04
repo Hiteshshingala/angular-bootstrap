@@ -35,9 +35,13 @@ export class LocationChartComponent implements OnInit {
     },
     elements: {
       line: {
-              fill: false
+        fill: false
       }
-  }
+    },
+    legend:
+      {
+          display: false
+      }
   };
   public lineChartColors: Color[] = [
     {
@@ -47,6 +51,7 @@ export class LocationChartComponent implements OnInit {
   public lineChartLegend = true;
   public lineChartType: ChartType = 'line';
   public lineChartPlugins = [];
+
   constructor() { }
 
   ngOnInit() {
@@ -62,4 +67,5 @@ export class LocationChartComponent implements OnInit {
       { data: value, label: 'location' }
     ];
   }
+
 }

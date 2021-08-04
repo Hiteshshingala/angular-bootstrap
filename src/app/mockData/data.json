@@ -2,15 +2,15 @@
     "tiles": {
         "mostActive": {
             "name": "Most Active",
-            "description": "Status" 
+            "description": "Status"
         },
         "visitors": {
             "name": "42.5K",
-            "description": "visitors" 
+            "description": "visitors"
         },
         "anonymous": {
             "name": "5.2K",
-            "description": "Anonymous" 
+            "description": "Anonymous"
         }
     },
     "chart": [
@@ -43,14 +43,14 @@
             "label": "26-July"
         }
     ],
-    "genderData":[
+    "genderData": [
         {
             "label": "male",
-            "value": 90
+            "value": 40
         },
         {
             "label": "female",
-            "value": 90
+            "value": 60
         },
         {
             "label": "others",

@@ -1,14 +1,14 @@
-interface Iobj {
+export interface IGender {
     value: string;
     label: string;
+    genderData: any;
 }
-interface ItilesObj {
+export interface ITilesType {
     name: string;
     description: string;
 }
-interface ItilesData {
-    mostActive: ItilesObj;
-    visitors: ItilesObj;
-    anonymous: ItilesObj;
-
+export interface ITilesData {
+    mostActive: ITilesType;
+    visitors: ITilesType;
+    anonymous: ITilesType;
 }
