@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ChartDataSets, ChartOptions, ChartType } from 'chart.js';
 import { Color, Label } from 'ng2-charts';
-import * as mockData from "../../mockData/data.json";
+import * as mockData from '../../mockData/data.json';
 
 @Component({
   selector: 'app-market-status',
@@ -19,13 +19,18 @@ export class MarketStatusComponent implements OnInit {
     scales: {
       xAxes: [{
         gridLines: {
-          color: "rgba(0, 0, 0, 0)",
-        }
+          color: 'rgba(0, 0, 0, 0)',
+        },
       }],
       yAxes: [{
         gridLines: {
-          color: "rgba(0, 0, 0, 0)",
-        }
+          color: 'rgba(0, 0, 0, 0)',
+        },
+        ticks: {
+          callback(label, index, labels) {
+              return label/1000 + 'k';
+          }
+      },
       }]
     }
   };
